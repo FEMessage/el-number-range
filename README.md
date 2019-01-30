@@ -30,6 +30,9 @@
 
 ## Documentation
 
+- [online demo](https://femessage.github.io/el-number-range/storybook/)
+- [full api doc](https://femessage.github.io/el-number-range/)
+
 [⬆ Back to Top](#table-of-contents)
 
 ## Install
