@@ -4,16 +4,17 @@
 
 ## Table of Contents
 
-* [el-number-range](#el-number-range)
-  * [Table of Contents](#table-of-contents)
-  * [Introduction](#introduction)
-  * [Feature](#feature)
-  * [Documentation](#documentation)
-  * [Install](#install)
-  * [Example](#example)
-    * [设置最大值](#%E8%AE%BE%E7%BD%AE%E6%9C%80%E5%A4%A7%E5%80%BC)
-    * [设置最小值](#%E8%AE%BE%E7%BD%AE%E6%9C%80%E5%B0%8F%E5%80%BC)
-  * [License](#license)
+- [el-number-range](#el-number-range)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Feature](#feature)
+  - [Documentation](#documentation)
+  - [Install](#install)
+  - [Example](#example)
+      - [设置最大值](#%E8%AE%BE%E7%BD%AE%E6%9C%80%E5%A4%A7%E5%80%BC)
+      - [设置最小值](#%E8%AE%BE%E7%BD%AE%E6%9C%80%E5%B0%8F%E5%80%BC)
+  - [Props](#props)
+  - [License](#license)
 
 ## Introduction
 
@@ -80,6 +81,18 @@ export default {
 ![min](http://thyrsi.com/t6/664/1548754367x2728306210.gif)
 
 [⬆ Back to Top](#table-of-contents)
+
+## Props
+
+| 参数                   | 说明                       | 类型    | 默认值 |
+| ---------------------- | -------------------------- | ------- | ------ |
+| value                  | 范围输入框默认值（支持v-model）| Array | []   |
+| max                    | 输入框最大值                | Number  | Infinity   |
+| min                    | 输入框最小值                | Number  | -Infinity   |
+| separator              | 输入框分隔符                | String  |  -   |
+| width                  | 输入框宽度                  | String  | 150px |
+
+
 
 ## License
 
