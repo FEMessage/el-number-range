@@ -7,7 +7,7 @@
 
 数字范围输入框组件
 
-![](http://thyrsi.com/t6/664/1548755405x2890174656.gif)
+![introduce](https://i.screenshot.net/8lw5osg)
 
 ## Table of Contents
 
@@ -52,7 +52,7 @@ yarn add element-ui --save
 
 ```vue
 // Step1 安装
-yarn add el-number-range 
+yarn add @femessage/el-number-range 
 
 // Step2 在需要的.vue 文件中
 <template>
@@ -81,11 +81,11 @@ export default {
 
 #### 设置最大值
 
-![max](http://thyrsi.com/t6/664/1548754376x2728306210.gif)
+![max](https://i.screenshot.net/e3yvzt8)
 
 #### 设置最小值
 
-![min](http://thyrsi.com/t6/664/1548754367x2728306210.gif)
+![min](https://i.screenshot.net/4n4pmum)
 
 [⬆ Back to Top](#table-of-contents)
 
