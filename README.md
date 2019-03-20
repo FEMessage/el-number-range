@@ -45,7 +45,7 @@ yarn add element-ui --save
 
 ```vue
 // Step1 安装
-yarn add el-number-range 
+yarn add @femessage/el-number-range 
 
 // Step2 在需要的.vue 文件中
 <template>
