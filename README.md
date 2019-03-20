@@ -1,6 +1,6 @@
 # el-number-range
 
-![](http://thyrsi.com/t6/664/1548755405x2890174656.gif)
+![introduce](https://i.screenshot.net/8lw5osg)
 
 ## Table of Contents
 
@@ -74,11 +74,11 @@ export default {
 
 #### 设置最大值
 
-![max](http://thyrsi.com/t6/664/1548754376x2728306210.gif)
+![max](https://i.screenshot.net/e3yvzt8)
 
 #### 设置最小值
 
-![min](http://thyrsi.com/t6/664/1548754367x2728306210.gif)
+![min](https://i.screenshot.net/4n4pmum)
 
 [⬆ Back to Top](#table-of-contents)
 
