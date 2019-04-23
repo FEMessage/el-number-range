@@ -1,9 +1,11 @@
 # el-number-range
 
+[![Build Status](https://travis-ci.com/FEMessage/el-number-range.svg?branch=master)](https://travis-ci.com/FEMessage/el-number-range)
 [![NPM Download](https://img.shields.io/npm/dm/@femessage/el-number-range.svg)](https://www.npmjs.com/package/@femessage/el-number-range)
 [![NPM Version](https://img.shields.io/npm/v/@femessage/el-number-range.svg)](https://www.npmjs.com/package/@femessage/el-number-range)
 [![NPM License](https://img.shields.io/npm/l/@femessage/el-number-range.svg)](https://github.com/FEMessage/el-number-range/blob/master/LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/FEMessage/el-number-range/pulls)
+[![Automated Release Notes by gren](https://img.shields.io/badge/%F0%9F%A4%96-release%20notes-00B2EE.svg)](https://github-tools.github.io/github-release-notes/)
 
 数字范围输入框组件
 
@@ -15,7 +17,7 @@
   - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
   - [Feature](#feature)
-  - [Documentation](#documentation)
+  - [Demo](#demo)
   - [Install](#install)
   - [Example](#example)
       - [设置最大值](#%E8%AE%BE%E7%BD%AE%E6%9C%80%E5%A4%A7%E5%80%BC)
@@ -36,10 +38,9 @@
 
 [⬆ Back to Top](#table-of-contents)
 
-## Documentation
+## Demo
 
-- [online demo](https://femessage.github.io/el-number-range/storybook/)
-- [full api doc](https://femessage.github.io/el-number-range/)
+* [doc and online demo](https://femessage.github.io/el-number-range/)
 
 [⬆ Back to Top](#table-of-contents)
 
