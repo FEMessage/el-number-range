@@ -31,10 +31,6 @@
     "prepublishOnly": "npm run build",
     "precommit": "pretty-quick --staged"
   },
-  "peerDependencies": {
-    "element-ui": "^2.4.9",
-    "vue": "^2.5.16"
-  },
   "devDependencies": {
     "@babel/core": "^7.4.3",
     "@babel/plugin-transform-runtime": "^7.4.3",
