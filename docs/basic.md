@@ -4,7 +4,6 @@
 <template>
   <el-number-range v-model="range"/>
 </template>
-
 <script>
 export default {
   data() {

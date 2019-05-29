@@ -2,9 +2,8 @@
 
 ```vue
 <template>
-  <el-number-range v-model="range" :max="max"></el-number-range>
+  <el-number-range v-model="range" :max="max" />
 </template>
-
 <script>
 export default {
   data() {

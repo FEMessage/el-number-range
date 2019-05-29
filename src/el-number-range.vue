@@ -1,8 +1,8 @@
 <template>
   <div class="el-number-range">
-    <el-input :style="{width:width}" type="number" :value="minValue" @input="onInput($event, maxValue)" @blur="onMinBlur"></el-input>
+    <el-input :style="{width}" type="number" :value="minValue" @input="onInput($event, maxValue)" @blur="onMinBlur"></el-input>
     <span class="separator">{{ separator }}</span>
-    <el-input :style="{width:width}" type="number" :value="maxValue" @input="onInput(minValue, $event)" @blur="onMaxBlur"></el-input>
+    <el-input :style="{width}" type="number" :value="maxValue" @input="onInput(minValue, $event)" @blur="onMaxBlur"></el-input>
   </div>
 </template>
 
@@ -24,6 +24,9 @@ export default {
       type: Number,
       default: -Infinity
     },
+    /**
+     * 输入框宽度
+     */
     width: {
       type: String,
       default: '150px'
