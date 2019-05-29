@@ -54,7 +54,7 @@ yarn add @femessage/el-number-range
 ```vue
 // Step2 在需要的.vue 文件中
 <template>
-    <el-number-range v-model="range" />
+  <el-number-range v-model="range" />
 </template>
 
 <script>
