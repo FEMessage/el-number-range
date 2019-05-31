@@ -2,9 +2,8 @@
 
 ```vue
 <template>
-  <el-number-range v-model="range" :min="min"></el-number-range>
+  <el-number-range v-model="range" :min="min" />
 </template>
-
 <script>
 export default {
   data() {
