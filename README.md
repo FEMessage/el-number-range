@@ -11,19 +11,16 @@
 
 ![introduce](https://i.screenshot.net/8lw5osg)
 
-## Table of Contents
+## Table of Contents <!-- omit in toc -->
 
-- [el-number-range](#el-number-range)
-  - [Table of Contents](#table-of-contents)
-  - [Introduction](#introduction)
-  - [Feature](#feature)
-  - [Demo](#demo)
-  - [Install](#install)
-  - [Example](#example)
-      - [设置最大值](#%E8%AE%BE%E7%BD%AE%E6%9C%80%E5%A4%A7%E5%80%BC)
-      - [设置最小值](#%E8%AE%BE%E7%BD%AE%E6%9C%80%E5%B0%8F%E5%80%BC)
-  - [Props](#props)
-  - [License](#license)
+* [Introduction](#introduction)
+* [Feature](#feature)
+* [Demo](#demo)
+* [Install](#install)
+* [Example](#example)
+  * [设置最大值](#设置最大值)
+  * [设置最小值](#设置最小值)
+* [License](#license)
 
 ## Introduction
 
@@ -49,15 +46,15 @@
 ```sh
 # 确保提前安装了element-ui且注册了el-input-number
 yarn add element-ui --save
+
+# Step1 安装
+yarn add @femessage/el-number-range
 ```
 
 ```vue
-// Step1 安装
-yarn add @femessage/el-number-range 
-
 // Step2 在需要的.vue 文件中
 <template>
-    <el-number-range v-model="range"></el-number-range>
+  <el-number-range v-model="range" />
 </template>
 
 <script>
@@ -80,27 +77,15 @@ export default {
 
 ## Example
 
-#### 设置最大值
+### 设置最大值
 
 ![max](https://i.screenshot.net/e3yvzt8)
 
-#### 设置最小值
+### 设置最小值
 
 ![min](https://i.screenshot.net/4n4pmum)
 
 [⬆ Back to Top](#table-of-contents)
-
-## Props
-
-| 参数                   | 说明                       | 类型    | 默认值 |
-| ---------------------- | -------------------------- | ------- | ------ |
-| value                  | 范围输入框默认值（支持v-model）| Array | []   |
-| max                    | 输入框最大值                | Number  | Infinity   |
-| min                    | 输入框最小值                | Number  | -Infinity   |
-| separator              | 输入框分隔符                | String  |  -   |
-| width                  | 输入框宽度                  | String  | 150px |
-
-
 
 ## License
 
