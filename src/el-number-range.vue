@@ -1,24 +1,23 @@
 <template>
   <div class="el-number-range">
-    <el-input :style="{width}" type="number" :value="minValue" @input="onInput($event, maxValue)" @blur="onMinBlur"></el-input>
+    <el-input :style="{width}" type="number" v-model.number="minValue"/>
     <span class="separator">{{ separator }}</span>
-    <el-input :style="{width}" type="number" :value="maxValue" @input="onInput(minValue, $event)" @blur="onMaxBlur"></el-input>
+    <el-input :style="{width}" type="number" v-model.number="maxValue"/>
   </div>
 </template>
-
 <script>
 export default {
   name: 'ElNumberRange',
   props: {
     /**
-     * 最大值
+     * 输入框的值上限
      */
     max: {
       type: Number,
       default: Infinity
     },
     /**
-     * 最小值
+     * 输入框的值下限
      */
     min: {
       type: Number,
@@ -39,95 +38,58 @@ export default {
       default: '-'
     },
     /**
-     * 输入框默认值
+     * 取数组第一位为最小值输入框的值，第二位为最大值输入框的值
+     * @model
      */
     value: {
       type: Array,
-      validator(range) {
-        return range.every(v => {
-          return !v || !isNaN(v) ? true : false
-        })
-      },
       default: () => []
     }
   },
-  data() {
-    let [minValue, maxValue] = this.value
-
-    return {
-      minValue,
-      maxValue
-    }
-  },
-  watch: {
-    // 同步max,min为传进来的value
-    value(data) {
-      let [minValue, maxValue] = data
-
-      this.minValue = minValue
-      this.maxValue = maxValue
+  computed: {
+    minValue: {
+      get() {
+        return this.value[0]
+      },
+      set(val) {
+        if (this.isNum(val)) {
+          val = this.clamp(val)
+          if (this.isNum(this.maxValue)) val = Math.min(val, this.maxValue)
+        } else {
+          val = undefined
+        }
+        this.$emit('input', [val, this.maxValue])
+      }
+    },
+    maxValue: {
+      get() {
+        return this.value[1]
+      },
+      set(val) {
+        if (this.isNum(val)) {
+          val = this.clamp(val)
+          if (this.isNum(this.minValue)) val = Math.max(val, this.minValue)
+        } else {
+          val = undefined
+        }
+        /**
+         * 配合v-model使用
+         */
+        this.$emit('input', [this.minValue, val])
+      }
     }
   },
   methods: {
-    onInput(min, max) {
-      this.$emit('input', [min, max])
+    clamp(val) {
+      return Math.max(this.min, Math.min(this.max, val))
     },
-    // min框失去焦点时若min>max,将min调小为
-    onMinBlur(e) {
-      // 输入是字符串
-      let value = e.target.value
-      let max = this.maxValue ? Number(this.maxValue) : undefined
-
-      // 空字符串
-      if (!value) {
-        this.emitInputNextTick([undefined, max])
-
-        return
-      }
-
-      value = Math.max(Number(value), this.min)
-
-      // undefined 不能比较
-      if (max) {
-        value = Math.min(value, max)
-      }
-
-      this.emitInputNextTick([value, max])
-    },
-    // max框失去焦点时若max<min, 则将max调大
-    onMaxBlur(e) {
-      let value = e.target.value
-      let min = this.minValue ? Number(this.minValue) : undefined
-
-      // 空字符串
-      if (!value) {
-        this.emitInputNextTick([min, undefined])
-
-        return
-      }
-
-      value = Math.min(Number(value), this.max)
-
-      // undefined 不能比较
-      if (min) {
-        value = Math.max(value, min)
-      }
-      this.emitInputNextTick([min, value])
-    },
-    emitInputNextTick(value = [undefined, undefined]) {
-      this.$nextTick(() => {
-        this.$emit('input', value)
-      })
-    }
+    isNum: n => typeof n === 'number'
   }
 }
 </script>
-
 <style lang="stylus">
-.el-number-range {
-  .separator {
-    color: #888;
-    padding: 0 8px;
-  }
-}
+.el-number-range
+  .separator
+    color #888
+    padding 0 8px
 </style>
