@@ -6,8 +6,6 @@
   </div>
 </template>
 <script>
-const isNum = n => typeof n === 'number'
-
 export default {
   name: 'ElNumberRange',
   props: {
@@ -54,9 +52,9 @@ export default {
         return this.value[0]
       },
       set(val) {
-        if (isNum(val)) {
+        if (this.isNum(val)) {
           val = this.clamp(val)
-          if (isNum(this.maxValue)) val = Math.min(val, this.maxValue)
+          if (this.isNum(this.maxValue)) val = Math.min(val, this.maxValue)
         } else {
           val = undefined
         }
@@ -68,9 +66,9 @@ export default {
         return this.value[1]
       },
       set(val) {
-        if (isNum(val)) {
+        if (this.isNum(val)) {
           val = this.clamp(val)
-          if (isNum(this.minValue)) val = Math.max(val, this.minValue)
+          if (this.isNum(this.minValue)) val = Math.max(val, this.minValue)
         } else {
           val = undefined
         }
@@ -84,7 +82,8 @@ export default {
   methods: {
     clamp(val) {
       return Math.max(this.min, Math.min(this.max, val))
-    }
+    },
+    isNum: n => typeof n === 'number'
   }
 }
 </script>
