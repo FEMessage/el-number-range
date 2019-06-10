@@ -87,6 +87,21 @@ export default {
 
 [⬆ Back to Top](#table-of-contents)
 
+## Contributors
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+
+<!-- prettier-ignore -->
+<table><tr><td align="center"><a href="https://github.com/linrunzheng"><img src="https://avatars0.githubusercontent.com/u/20603896?v=4" width="100px;" alt="linrunzheng"/><br /><sub><b>linrunzheng</b></sub></a><br /><a href="https://github.com/FEMessage/el-number-range/commits?author=linrunzheng" title="Code">💻</a> <a href="https://github.com/FEMessage/el-number-range/commits?author=linrunzheng" title="Documentation">📖</a></td><td align="center"><a href="https://evila.me"><img src="https://avatars3.githubusercontent.com/u/19513289?v=4" width="100px;" alt="EVILLT"/><br /><sub><b>EVILLT</b></sub></a><br /><a href="#infra-evillt" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td><td align="center"><a href="https://donaldshen.github.io/portfolio"><img src="https://avatars3.githubusercontent.com/u/19591950?v=4" width="100px;" alt="Donald Shen"/><br /><sub><b>Donald Shen</b></sub></a><br /><a href="https://github.com/FEMessage/el-number-range/issues?q=author%3Adonaldshen" title="Bug reports">🐛</a> <a href="https://github.com/FEMessage/el-number-range/commits?author=donaldshen" title="Documentation">📖</a></td><td align="center"><a href="https://github.com/levy9527/blog"><img src="https://avatars3.githubusercontent.com/u/9384365?v=4" width="100px;" alt="levy"/><br /><sub><b>levy</b></sub></a><br /><a href="#infra-levy9527" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#review-levy9527" title="Reviewed Pull Requests">👀</a></td></tr></table>
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
+[⬆ Back to Top](#table-of-contents)
+
 ## License
 
 [MIT](./LICENSE)
