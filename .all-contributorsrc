@@ -9,6 +9,46 @@
   "imageSize": 100,
   "commit": false,
   "commitConvention": "angular",
-  "contributors": [],
+  "contributors": [
+    {
+      "login": "linrunzheng",
+      "name": "linrunzheng",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/20603896?v=4",
+      "profile": "https://github.com/linrunzheng",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "evillt",
+      "name": "EVILLT",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/19513289?v=4",
+      "profile": "https://evila.me",
+      "contributions": [
+        "infra"
+      ]
+    },
+    {
+      "login": "donaldshen",
+      "name": "Donald Shen",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/19591950?v=4",
+      "profile": "https://donaldshen.github.io/portfolio",
+      "contributions": [
+        "bug",
+        "doc"
+      ]
+    },
+    {
+      "login": "levy9527",
+      "name": "levy",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/9384365?v=4",
+      "profile": "https://github.com/levy9527/blog",
+      "contributions": [
+        "infra",
+        "review"
+      ]
+    }
+  ],
   "contributorsPerLine": 7
 }
