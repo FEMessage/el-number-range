@@ -12,30 +12,30 @@ Digital range input box component<br />![](https://cdn.nlark.com/yuque/0/2019/pn
 <a name="65f5152b"></a>
 ## Table of Contents
 
-- [Introduction](https://www.yuque.com/deepexi-serverless/onx52o/gefvuc?translate=en#introduction)
-- [Feature](https://www.yuque.com/deepexi-serverless/onx52o/gefvuc?translate=en#feature)
-- [Demo](https://www.yuque.com/deepexi-serverless/onx52o/gefvuc?translate=en#demo)
-- [Install](https://www.yuque.com/deepexi-serverless/onx52o/gefvuc?translate=en#install)
-- [Example](https://www.yuque.com/deepexi-serverless/onx52o/gefvuc?translate=en#example)
-  - [Set maximum](https://www.yuque.com/deepexi-serverless/onx52o/gefvuc?translate=en#%E8%AE%BE%E7%BD%AE%E6%9C%80%E5%A4%A7%E5%80%BC)
-  - [Set minimum](https://www.yuque.com/deepexi-serverless/onx52o/gefvuc?translate=en#%E8%AE%BE%E7%BD%AE%E6%9C%80%E5%B0%8F%E5%80%BC)
-- [License](https://www.yuque.com/deepexi-serverless/onx52o/gefvuc?translate=en#license)
+- [Introduction](#introduction)
+- [Feature](#feature)
+- [Demo](#demo)
+- [Install](#install)
+- [Example](#example)
+  - [Set maximum](#%E8%AE%BE%E7%BD%AE%E6%9C%80%E5%A4%A7%E5%80%BC)
+  - [Set minimum](#%E8%AE%BE%E7%BD%AE%E6%9C%80%E5%B0%8F%E5%80%BC)
+- [License](#license)
 
 <a name="Introduction"></a>
 ## Introduction
 
-The digital range input box is suitable for scenarios where you need to enter a range, such as price and integral range. By exposing the input event to the outside world, the user can bind the scope through v-model, which is easy to use.<br />[⬆Back to Top](https://www.yuque.com/deepexi-serverless/onx52o/gefvuc?translate=en#table-of-contents)
+The digital range input box is suitable for scenarios where you need to enter a range, such as price and integral range. By exposing the input event to the outside world, the user can bind the scope through v-model, which is easy to use.<br />[⬆Back to Top](#table-of-contents)
 
 <a name="Feature"></a>
 ## Feature
 
 - Automatic range correction;
-- Can customize the input box range min-max;<br />[⬆Back to Top](https://www.yuque.com/deepexi-serverless/onx52o/gefvuc?translate=en#table-of-contents)
+- Can customize the input box range min-max;<br />[⬆Back to Top](#table-of-contents)
 
 <a name="Demo"></a>
 ## Demo
 
-- [Doc and online demo](https://femessage.github.io/el-number-range/)<br />[⬆Back to Top](https://www.yuque.com/deepexi-serverless/onx52o/gefvuc?translate=en#table-of-contents)
+- [Doc and online demo](https://femessage.github.io/el-number-range/)<br />[⬆Back to Top](#table-of-contents)
 
 <a name="Install"></a>
 ## Install
@@ -68,7 +68,7 @@ export default {
 </script>
 ```
 
-[⬆Back to Top](https://www.yuque.com/deepexi-serverless/onx52o/gefvuc?translate=en#table-of-contents)
+[⬆Back to Top](#table-of-contents)
 
 <a name="Example"></a>
 ## Example
@@ -81,7 +81,7 @@ export default {
 <a name="e993ecfb"></a>
 ### Set minimum
 
-![](https://cdn.nlark.com/yuque/0/2019/png/224563/1561960749222-35cf5922-a17b-422f-ad79-b60d459ded9f.png#align=left&display=inline&height=904&originHeight=904&originWidth=1758&size=0&status=done&width=1758)<br />[⬆Back to Top](https://www.yuque.com/deepexi-serverless/onx52o/gefvuc?translate=en#table-of-contents)
+![](https://cdn.nlark.com/yuque/0/2019/png/224563/1561960749222-35cf5922-a17b-422f-ad79-b60d459ded9f.png#align=left&display=inline&height=904&originHeight=904&originWidth=1758&size=0&status=done&width=1758)<br />[⬆Back to Top](#table-of-contents)
 
 <a name="Contributors"></a>
 ## Contributors
