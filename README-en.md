@@ -64,7 +64,7 @@ export default {
   },
   data() {
     return {
-      version: [0, 1000]
+      range: [0, 1000]
     }
   }
 }
