@@ -11,6 +11,8 @@
 
 ![introduce](https://i.screenshot.net/8lw5osg)
 
+[English](./README-en.md)
+
 ## Table of Contents <!-- omit in toc -->
 
 * [Introduction](#introduction)
@@ -24,14 +26,14 @@
 
 ## Introduction
 
-数字范围输入框，适用于需要输入范围的场景，比如价格，积分范围。通过对外暴露 input 事件，使用者可以通过 v-model 进行范围绑定，上手简单。
+数字范围输入框，适用于需要输入范围的场景，比如价格，积分范围。
 
 [⬆ Back to Top](#table-of-contents)
 
 ## Feature
 
-* 自动进行范围纠正;
-* 可自定义输入框范围 min - max;
+* 自动进行范围纠正
+* 可自定义输入框范围 min/max
 
 [⬆ Back to Top](#table-of-contents)
 
@@ -66,7 +68,7 @@ export default {
   },
   data() {
     return {
-      version: [0, 1000]
+      range: [0, 1000]
     }
   }
 }
