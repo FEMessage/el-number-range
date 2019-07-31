@@ -1,8 +1,20 @@
 <template>
   <div class="el-number-range">
-    <el-input :style="{width}" type="number" v-model.number="minValue"/>
+    <el-input
+      :style="{width}"
+      type="number"
+      v-model.number="minValue"
+      @blur="handleBlur('min', $event)"
+      @focus="handleFocus('min', $event)"
+    />
     <span class="separator">{{ separator }}</span>
-    <el-input :style="{width}" type="number" v-model.number="maxValue"/>
+    <el-input
+      :style="{width}"
+      type="number"
+      v-model.number="maxValue"
+      @blur="handleBlur('max', $event)"
+      @focus="handleFocus('max', $event)"
+    />
   </div>
 </template>
 <script>
@@ -80,6 +92,12 @@ export default {
     }
   },
   methods: {
+    handleBlur(position, event) {
+      this.$emit('blur', event, position)
+    },
+    handleFocus(position) {
+      this.$emit('focus', event, position)
+    },
     clamp(val) {
       return Math.max(this.min, Math.min(this.max, val))
     },
