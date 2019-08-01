@@ -4,16 +4,16 @@
       :style="{width}"
       type="number"
       v-model.number="minValue"
-      @blur="handleBlur('min', $event)"
-      @focus="handleFocus('min', $event)"
+      @blur="handleBlur($event, 'min')"
+      @focus="handleFocus($event, 'min')"
     />
     <span class="separator">{{ separator }}</span>
     <el-input
       :style="{width}"
       type="number"
       v-model.number="maxValue"
-      @blur="handleBlur('max', $event)"
-      @focus="handleFocus('max', $event)"
+      @blur="handleBlur($event, 'max')"
+      @focus="handleFocus($event, 'max')"
     />
   </div>
 </template>
@@ -92,10 +92,10 @@ export default {
     }
   },
   methods: {
-    handleBlur(position, event) {
+    handleBlur(event, position) {
       this.$emit('blur', event, position)
     },
-    handleFocus(position) {
+    handleFocus(event, position) {
       this.$emit('focus', event, position)
     },
     clamp(val) {
