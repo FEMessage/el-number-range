@@ -1,8 +1,8 @@
 <template>
   <div class="el-number-range">
-    <el-input :style="{width}" type="number" v-model.number="minValue"/>
+    <el-input :style="{width}" type="number" v-model.number="minValue" @blur="clampMin" />
     <span class="separator">{{ separator }}</span>
-    <el-input :style="{width}" type="number" v-model.number="maxValue"/>
+    <el-input :style="{width}" type="number" v-model.number="maxValue" @blur="clampMax" />
   </div>
 </template>
 <script>
@@ -52,12 +52,7 @@ export default {
         return this.value[0]
       },
       set(val) {
-        if (this.isNum(val)) {
-          val = this.clamp(val)
-          if (this.isNum(this.maxValue)) val = Math.min(val, this.maxValue)
-        } else {
-          val = undefined
-        }
+        if (val === '') val = undefined
         this.$emit('input', [val, this.maxValue])
       }
     },
@@ -66,24 +61,27 @@ export default {
         return this.value[1]
       },
       set(val) {
-        if (this.isNum(val)) {
-          val = this.clamp(val)
-          if (this.isNum(this.minValue)) val = Math.max(val, this.minValue)
-        } else {
-          val = undefined
-        }
-        /**
-         * 配合v-model使用
-         */
+        if (val === '') val = undefined
         this.$emit('input', [this.minValue, val])
       }
     }
   },
   methods: {
+    clampMin() {
+      if (this.minValue === undefined) return
+      let val = this.clamp(this.minValue)
+      if (this.maxValue !== undefined) val = Math.min(val, this.maxValue)
+      this.$emit('input', [val, this.maxValue])
+    },
+    clampMax() {
+      if (this.maxValue === undefined) return
+      let val = this.clamp(this.maxValue)
+      if (this.minValue !== undefined) val = Math.max(val, this.minValue)
+      this.$emit('input', [this.minValue, val])
+    },
     clamp(val) {
       return Math.max(this.min, Math.min(this.max, val))
-    },
-    isNum: n => typeof n === 'number'
+    }
   }
 }
 </script>
