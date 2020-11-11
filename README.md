@@ -1,67 +1,65 @@
 # el-number-range
 
-[![Build Status](https://travis-ci.com/FEMessage/el-number-range.svg?branch=master)](https://travis-ci.com/FEMessage/el-number-range)
-[![NPM Download](https://img.shields.io/npm/dm/@femessage/el-number-range.svg)](https://www.npmjs.com/package/@femessage/el-number-range)
-[![NPM Version](https://img.shields.io/npm/v/@femessage/el-number-range.svg)](https://www.npmjs.com/package/@femessage/el-number-range)
-[![NPM License](https://img.shields.io/npm/l/@femessage/el-number-range.svg)](https://github.com/FEMessage/el-number-range/blob/master/LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/FEMessage/el-number-range/pulls)
-[![Automated Release Notes by gren](https://img.shields.io/badge/%F0%9F%A4%96-release%20notes-00B2EE.svg)](https://github-tools.github.io/github-release-notes/)
+[![](https://cdn.nlark.com/yuque/0/2019/svg/224563/1561960751889-d4d8cf71-81dd-4316-b470-96ec2f671707.svg#align=left&display=inline&height=20&originHeight=20&originWidth=90&size=0&status=done&width=90)](https://travis-ci.com/FEMessage/el-number-range)
+[![](https://img.shields.io/npm/dm/@femessage/el-number-range.svg#align=left&display=inline&height=20&originHeight=20&originWidth=134&status=done&width=134)](https://www.npmjs.com/package/@femessage/el-number-range)
+[![](https://img.shields.io/npm/v/@femessage/el-number-range.svg#align=left&display=inline&height=20&originHeight=20&originWidth=80&status=done&width=80)](https://www.npmjs.com/package/@femessage/el-number-range)
+[![](https://img.shields.io/npm/l/@femessage/el-number-range.svg#align=left&display=inline&height=20&originHeight=20&originWidth=78&status=done&width=78)](https://github.com/FEMessage/el-number-range/blob/master/LICENSE)
+[![](https://img.shields.io/badge/PRs-welcome-brightgreen.svg#align=left&display=inline&height=20&originHeight=20&originWidth=90&status=done&width=90)](https://github.com/FEMessage/el-number-range/pulls)
+![](https://img.shields.io/badge/%F0%9F%A4%96-release%20notes-00B2EE.svg#align=left&display=inline&height=20&originHeight=20&originWidth=104&status=done&width=104)
 
-数字范围输入框组件
+Number range input component, first number should be not be bigger than the second.
 
-![introduce](https://i.screenshot.net/8lw5osg)
+![](https://cdn.nlark.com/yuque/0/2019/png/224563/1561960749041-53b1cf53-f39d-4353-a450-5ed0e59fb061.png#align=left&display=inline&height=298&originHeight=298&originWidth=1034&size=0&status=done&width=1034)
 
-[English](./README-en.md)
+[中文文档](./README-zh.md)
 
-## Table of Contents <!-- omit in toc -->
+## Table of Contents
 
 * [Introduction](#introduction)
 * [Feature](#feature)
 * [Demo](#demo)
 * [Install](#install)
 * [Example](#example)
-  * [设置最大值](#设置最大值)
-  * [设置最小值](#设置最小值)
+  * [Max](#max)
+  * [Min](#min)
 * [License](#license)
 
 ## Introduction
 
-数字范围输入框，适用于需要输入范围的场景，比如价格，积分范围。
+The number range component is suitable for scenarios which needs set number range via two inputs, such as price range.
 
-[⬆ Back to Top](#table-of-contents)
+[⬆Back to Top](#table-of-contents)
 
 ## Feature
 
-* 自动进行范围纠正
-* 可自定义输入框范围 min/max
+* Automatically range correction
+* Support set min and max
 
-[⬆ Back to Top](#table-of-contents)
+[⬆Back to Top](#table-of-contents)
 
 ## Demo
 
-* [doc and online demo](https://femessage.github.io/el-number-range/)
+* [Doc and online demo](https://femessage.github.io/el-number-range/)
 
-[⬆ Back to Top](#table-of-contents)
+[⬆Back to Top](#table-of-contents)
 
 ## Install
 
-```sh
-# 确保提前安装了element-ui且注册了el-input-number
+```html
+# ensure installed element-ui and registered el-input-number
 yarn add element-ui --save
 
-# Step1 安装
+# Step1 install
 yarn add @femessage/el-number-range
 ```
 
-```vue
-// Step2 在需要的.vue 文件中
+```html
+// Step2 In the required .vue file
 <template>
   <el-number-range v-model="range" />
 </template>
-
 <script>
 import ElNumberRange from '@femessage/el-number-range'
-
 export default {
   components: {
     ElNumberRange
@@ -75,37 +73,24 @@ export default {
 </script>
 ```
 
-[⬆ Back to Top](#table-of-contents)
+[⬆Back to Top](#table-of-contents)
 
 ## Example
 
-### 设置最大值
+### Max
 
-![max](https://i.screenshot.net/e3yvzt8)
+![](https://cdn.nlark.com/yuque/0/2019/png/224563/1561960748788-c67bb853-ea3e-43b6-b7e7-839ca6c23868.png#align=left&display=inline&height=904&originHeight=904&originWidth=1758&size=0&status=done&width=1758)
 
-### 设置最小值
+### Min
 
-![min](https://i.screenshot.net/4n4pmum)
+![](https://cdn.nlark.com/yuque/0/2019/png/224563/1561960749222-35cf5922-a17b-422f-ad79-b60d459ded9f.png#align=left&display=inline&height=904&originHeight=904&originWidth=1758&size=0&status=done&width=1758)
 
-[⬆ Back to Top](#table-of-contents)
+[⬆Back to Top](#table-of-contents)
 
 ## Contributors
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+| [![](https://avatars0.githubusercontent.com/u/20603896?v=4#alt=linrunzheng&width=100)<br />**linrunzheng**](https://github.com/linrunzheng)<br />[💻](https://github.com/FEMessage/el-number-range/commits?author=linrunzheng) [📖](https://github.com/FEMessage/el-number-range/commits?author=linrunzheng) | [![](https://avatars3.githubusercontent.com/u/19513289?v=4#alt=EVILLT&width=100)<br />**EVILLT**](https://evila.me)<br />[🚇](#infra-evillt) | [![](https://avatars3.githubusercontent.com/u/19591950?v=4#alt=Donald%20Shen&width=100)<br />**Donald Shen**](https://donaldshen.github.io/portfolio)<br />[🐛](https://github.com/FEMessage/el-number-range/issues?q=author%3Adonaldshen) [📖](https://github.com/FEMessage/el-number-range/commits?author=donaldshen) | [![](https://avatars3.githubusercontent.com/u/9384365?v=4#alt=levy&width=100)<br />**levy**](https://github.com/levy9527/blog)<br />[🚇](#infra-levy9527) [👀](#review-levy9527) |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-<!-- prettier-ignore -->
-<table><tr><td align="center"><a href="https://github.com/linrunzheng"><img src="https://avatars0.githubusercontent.com/u/20603896?v=4" width="100px;" alt="linrunzheng"/><br /><sub><b>linrunzheng</b></sub></a><br /><a href="https://github.com/FEMessage/el-number-range/commits?author=linrunzheng" title="Code">💻</a> <a href="https://github.com/FEMessage/el-number-range/commits?author=linrunzheng" title="Documentation">📖</a></td><td align="center"><a href="https://evila.me"><img src="https://avatars3.githubusercontent.com/u/19513289?v=4" width="100px;" alt="EVILLT"/><br /><sub><b>EVILLT</b></sub></a><br /><a href="#infra-evillt" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td><td align="center"><a href="https://donaldshen.github.io/portfolio"><img src="https://avatars3.githubusercontent.com/u/19591950?v=4" width="100px;" alt="Donald Shen"/><br /><sub><b>Donald Shen</b></sub></a><br /><a href="https://github.com/FEMessage/el-number-range/issues?q=author%3Adonaldshen" title="Bug reports">🐛</a> <a href="https://github.com/FEMessage/el-number-range/commits?author=donaldshen" title="Documentation">📖</a></td><td align="center"><a href="https://github.com/levy9527/blog"><img src="https://avatars3.githubusercontent.com/u/9384365?v=4" width="100px;" alt="levy"/><br /><sub><b>levy</b></sub></a><br /><a href="#infra-levy9527" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#review-levy9527" title="Reviewed Pull Requests">👀</a></td></tr></table>
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
-
-[⬆ Back to Top](#table-of-contents)
-
-## License
-
-[MIT](./LICENSE)
-
-[⬆ Back to Top](#table-of-contents)

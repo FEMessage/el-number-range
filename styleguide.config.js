@@ -21,9 +21,7 @@ module.exports = {
   ribbon: {
     url: 'https://github.com/FEMessage/el-number-range'
   },
-  require: [
-    './styleguide/element.js'
-  ],
+  require: ['./styleguide/element.js'],
   sections: [
     {
       name: 'Components',
@@ -33,6 +31,10 @@ module.exports = {
     {
       name: 'Demo',
       sections: demoSections
+    },
+    {
+      name: 'FAQ',
+      content: 'docs/faq.md'
     }
   ],
   webpackConfig: {
@@ -61,8 +63,6 @@ module.exports = {
         }
       ]
     },
-    plugins: [
-      new VueLoaderPlugin()
-    ]
+    plugins: [new VueLoaderPlugin()]
   }
 }
