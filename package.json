@@ -16,6 +16,7 @@
   "browser": {
     "./sfc": "src/el-number-range.vue"
   },
+  "types": "src/el-number-range.d.ts",
   "scripts": {
     "dev": "vue-styleguidist server",
     "test": "jest",
